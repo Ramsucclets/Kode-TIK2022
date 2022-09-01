@@ -21,16 +21,18 @@ print('2.Kurang')
 print('3.Kali')
 print('4.Bagi')
 
-a = int(input('\n'))
-num1 = int(input("masukan angka pertama: ")) 
-num2 = int(input("masukan angka kedua: "))
-
-if a == '1':
-    print(add(num1,num2))
-elif a == '2': 
-    print(subtract(num1,num2))
-elif a == '3':
-    print(multiply)
-elif a == '4': 
-    print(divide)
+func = int(input())
+if func in range(0,4):
+    num1 = int(input("First number = "))
+    num2 = int(input("Second number = "))
+    if func == 1: 
+        print(add(num1,num2))
+    elif func == 2:
+        print(sub(num1,num2))
+    elif func == 3: 
+        print(mult(num1,num2))
+    if func == 4: 
+        print(div(num1,num2))
+else:
+    print("not in range)
 
