@@ -1,0 +1,48 @@
+def disc(hrga, jmlh):
+    harjum = hrga *jmlh
+    ppn = float(harjum/10)
+    if jmlh >= 5:
+        dskon = harjum*2/10
+        tot = harjum- diskon + ppn
+    else:
+        tot = harga + ppn
+    return tot
+
+def normal(hrga, jumlah):
+    harjum = (hrga *jmlh)
+    ppn = harjum /10
+    tot = harjum + ppn
+    return tot
+
+x = "y"
+while x == "y": 
+    print(f"""
+    12 MIPA Coffee
+    Menu Minuman
+    
+    A: ES kopi susu     : Rp 11.000
+    B: ES kopi Coklat   : Rp 12.000
+    C: ES kopi Hitam    : Rp 11.000
+    D: Ice Americano    : Rp 14.000
+    """)
+    
+    pesan = input("Masukkan Menu kopi =")
+    jmlh = input("Masukan jumlah pesanan = ")
+    
+    if pesan =="a":
+        print("print menu : ES kopi susu")
+        print(disc(int(11000), jmlh))
+    elif pesan =="b":
+        print("print menu : ES kopi Coklat")
+        print(disc(12000, jmlh))
+    elif pesan =="c":
+        print("print menu : ES kopi Hitam")
+        print(normal(11000, jmlh))
+    elif pesan =="c":
+        print("print menu : Ice Americano")
+        print(normal(14000, jmlh))
+        
+else:
+    x = input("Pilihan tidak tersedia silahkan ulangi lagi = (Y/N)")
+        
+        
